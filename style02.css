@@ -1,0 +1,158 @@
+body{
+
+    background: url(assets/bckgrnd.png) left top repeat;
+     
+}
+
+/* Top half of the page styling */
+
+main{
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%;
+
+}
+
+.box{
+    
+    height: 100%;
+    grid-column: span 1;
+    grid-row: span 1;
+
+ }
+ nav{
+ 
+    padding: 25px 120px 25px 120px;
+  
+}
+.top{
+
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+img {
+    margin: 0px 5px 0px 5px
+}
+   
+h1{
+   
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: rgba(58, 55, 55, 0.8);
+}
+h2{
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #333333;
+}
+.bio{
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+}
+
+.myPicture{
+    margin-top: 25px;
+    margin-left: 140px;
+    border: 3px solid #2c5fa8;
+    width: 100px;
+    height: 100px;
+    border-radius: 75%;
+         
+}
+   /* Bottom half of the page styling */
+   
+.bottom{
+       
+    background-color: #969696;
+    background-color: rgba(150,150,150,0.6);
+    margin-left: 0%;
+    margin-bottom: 0%;
+    
+   
+       
+}
+   
+h3{
+    font-family: 'Montserrat', sans-serif;;
+    color: #FFFFFF;
+    margin: auto;
+    padding: 20px;
+    font-size: 20px;
+    border-bottom: 2px solid white;
+   
+}
+   
+.employee{
+    width: 300px;
+    height: 200px;
+    margin: 25px 50px 75px 100px;
+   
+}
+   
+   
+footer{
+       
+    border-top: 2px solid white;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    align-content: center;
+}
+   
+.footer{
+  
+    padding: 5px 75px 5px 75px;
+}
+
+
+
+@media only screen and (min-width : 600px){
+
+    main{
+        
+        grid-template-rows: repeat(1, 1fr)
+    }
+
+
+    .box{
+        grid-row: span 1;
+        grid-column: span 1;
+        height: 100%;
+    }
+
+    .myPicture{
+       position: absolute;
+       top: 320px;
+       right: 50px;
+       width: 150px;
+        height: 150px;
+      
+             
+}
+nav{
+    margin: 15px;
+    padding: 15px 120px 10px 15px;
+  
+}
+
+.top{
+    margin: 15px;
+    padding-right: 900px;
+    }
+
+
+.bottom{
+    padding: 5px 30px 5px 30px;
+    align-content: center;
+}
+
+.footer{
+   padding-left: 40%;
+   text-justify: auto;
+}
+
+}
